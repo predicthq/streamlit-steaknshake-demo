@@ -43,6 +43,9 @@ def demand_surge():
     ):
         return
 
+    st.markdown(
+        "<img src='app/static/steaknshake.png' width='160' />", unsafe_allow_html=True
+    )
     st.header(location["name"])
 
     # Display metrics
@@ -150,7 +153,6 @@ def get_daily_sums_of_features(features_result, features):
     results = []
 
     for item in features_result["results"]:
-
         for k, v in item.items():
             if k in features:
                 results.append(
