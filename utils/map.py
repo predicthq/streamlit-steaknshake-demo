@@ -59,7 +59,7 @@ def show_map(lat, lon, radius_meters, events):
             initial_view_state=pdk.ViewState(
                 latitude=lat,
                 longitude=lon,
-                zoom=14,
+                zoom=13,
             ),
             layers=[
                 # Radius layer
@@ -79,15 +79,15 @@ def show_map(lat, lon, radius_meters, events):
                             "coordinates": [lon, lat],
                             "radius": radius_meters,
                             "icon_data": {
-                                "url": "app/static/restaurant-icon.png",
-                                "width": 160,
-                                "height": 160,
+                                "url": "app/static/steaknshake.png",
+                                "width": 240,
+                                "height": 175,
                             },
                         }
                     ],
                     get_position="coordinates",
                     get_icon="icon_data",
-                    get_size=20,
+                    get_size=30,
                     pickable=False,
                 ),
                 # Point-type events layer

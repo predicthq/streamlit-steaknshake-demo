@@ -42,6 +42,9 @@ def map():
     ):
         return
 
+    st.markdown(
+        "<img src='app/static/steaknshake.png' width='160' />", unsafe_allow_html=True
+    )
     st.header(location["name"])
 
     # Display metrics
